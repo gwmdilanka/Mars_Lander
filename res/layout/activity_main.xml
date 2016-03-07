@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"    
+    android:orientation="vertical" >
+    
+    <com.example.martianlander.GameLoopView
+        android:id="@+id/gameLoopView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+     <RelativeLayout
+         android:id="@+id/buttonGroup"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" >       
+         
+         
+         
+         <Button
+             android:id="@+id/btnExit"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/btnRestart"
+             android:layout_alignBottom="@+id/btnRestart"
+             android:layout_alignLeft="@+id/btnLeft"
+             android:background="@drawable/buttonshape"
+             android:minHeight="50dip"
+             android:minWidth="70dip"
+             android:shadowColor="#A8A8A8"
+             android:shadowDx="0"
+             android:shadowDy="0"
+             android:shadowRadius="0"
+             android:text="Exit"
+             android:textColor="#FFFFFF"
+             android:textSize="20sp"
+             tools:ignore="HardcodedText" />
+         
+         <Button
+             android:id="@+id/btnLeft"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentLeft="true"
+             android:layout_marginBottom="22dp"
+             android:layout_marginLeft="23dp"
+             android:background="@drawable/buttonshape"
+             android:minHeight="50dip"
+             android:minWidth="60dip"
+             android:shadowColor="#A8A8A8"
+             android:shadowDx="0"
+             android:shadowDy="0"
+             android:shadowRadius="0"
+             android:text="Left"
+             android:textColor="#FFFFFF"
+             android:textSize="20sp"
+             tools:ignore="HardcodedText" />
+         
+         <Button
+               android:id="@+id/btnRight"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/btnLeft"
+               android:layout_alignBottom="@+id/btnLeft"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="23dp"  
+               android:background="@drawable/buttonshape"
+               android:minHeight="50dip"
+               android:minWidth="60dip"
+               android:shadowColor="#A8A8A8"
+               android:shadowDx="0"
+               android:shadowDy="0"
+               android:shadowRadius="0"
+               android:text="Right"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:ignore="HardcodedText" />
+         
+         <Button
+               android:id="@+id/btnUp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBaseline="@+id/btnLeft"
+               android:layout_alignBottom="@+id/btnLeft" 
+               android:layout_centerHorizontal="true"            
+               android:background="@drawable/buttonshape"
+               android:minHeight="50dip"
+               android:minWidth="60dip"               
+               android:layout_marginRight="23dp"
+               android:shadowColor="#A8A8A8"
+               android:shadowDx="0"
+               android:shadowDy="0"
+               android:shadowRadius="0"
+               android:text="Up"
+               android:textColor="#FFFFFF"
+               android:textSize="20sp"
+               tools:ignore="HardcodedText" />
+
+         <Button
+             android:id="@+id/btnRestart"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_alignRight="@+id/btnRight"
+             android:layout_marginTop="28dp"
+             android:background="@drawable/buttonshape"
+             android:minHeight="50dip"
+             android:minWidth="70dip"
+             android:shadowColor="#A8A8A8"
+             android:shadowDx="0"
+             android:shadowDy="0"
+             android:shadowRadius="0"
+             android:text="@string/Restart"
+             android:textColor="#FFFFFF"
+             android:textSize="20sp"
+             tools:ignore="HardcodedText" />
+
+     </RelativeLayout>
+
+</FrameLayout>
